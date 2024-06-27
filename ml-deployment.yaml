@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ml-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ml-inference
+  template:
+    metadata:
+      labels:
+        app: ml-inference
+    spec:
+      containers:
+      - name: ml-inference
+        image: your_dockerhub_username/resnet18:latest
+        ports:
+        - containerPort: 8080
+        - containerPort: 8081

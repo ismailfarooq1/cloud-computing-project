@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  cloudcomputingproject:
+    image: cloudcomputingproject
+    build:
+      context: .
+      dockerfile: ./Dockerfile

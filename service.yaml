@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ml-inference-service
+spec:
+  selector:
+    app: ml-inference
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080

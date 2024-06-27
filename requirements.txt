@@ -1,0 +1,6 @@
+# uvicorn==0.20.0
+git+https://github.com/reconfigurable-ml-pipeline/load_tester
+torchserve
+torch-model-archiver
+kubernetes
+prometheus_api_client
